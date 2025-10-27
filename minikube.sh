@@ -34,5 +34,4 @@ curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikub
 validate $? "minikube installation"
 install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64 &>>$LOG_FILE
 validate $? "adding to the directory"
-minikube start --driver=docker
-validate $? "starting driver"
+
