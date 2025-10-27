@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nodejs
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector: 
     component: nodejs
     tier: app
@@ -11,4 +11,5 @@ spec:
   - protocol: TCP
     port: 8080
     targetPort: 8080
+    nodePort: 31638
   
